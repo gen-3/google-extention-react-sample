@@ -1,0 +1,25 @@
+{
+  "name": "サンプルだよ",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "あらゆるページがUNKOになるよ",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "styles/main.css"
+      ],
+      "js": [
+        "scripts/index.js"
+      ]
+    }
+  ]
+}
